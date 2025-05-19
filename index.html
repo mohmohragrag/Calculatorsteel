@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>حاسبة وزن حديد I-Beam</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>حاسبة وزن حديد I-Beam</h2>
+
+  <label>الطول (مم):</label>
+  <input type="number" id="length">
+
+  <label>ارتفاع الويب (مم):</label>
+  <input type="number" id="webHeight">
+
+  <label>عرض الفلانشة (مم):</label>
+  <input type="number" id="flangeWidth">
+
+  <label>سُمك الفلانشة (مم):</label>
+  <input type="number" id="flangeThickness">
+
+  <label>سُمك الويب (مم):</label>
+  <input type="number" id="webThickness">
+
+  <label>عدد العمدان:</label>
+  <input type="number" id="count" value="1">
+
+  <button onclick="calculateWeight()">احسب الوزن</button>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
